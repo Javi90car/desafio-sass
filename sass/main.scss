@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&display=swap');
+$font-family-base: 'Alegreya Sans', sans-serif;
+$new-color: #cf649a;
+$new-fondo: #272829;
+$theme-colors: (
+    "new-color": $new-color,
+    "new-fondo": $new-fondo) !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.container{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+@import "../node_modules/bootstrap/scss/functions";
+
+.fondo-color{
+    background-color: $new-fondo;
+}
+
+.card{
+    @extend .fondo-color;
+}
